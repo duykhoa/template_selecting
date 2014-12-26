@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Template Selecting
 ================
 
@@ -46,3 +47,7 @@ Credits
 
 License
 -------
+=======
+template_selecting
+==================
+>>>>>>> ceebe7575114304fc5dbb610cdaaf56dddfed598
