@@ -1,0 +1,5 @@
+- products.each_slice(3) do |three_products|
+  .row
+    - three_products.each do |product|
+      .four.columns
+        = retina_image_tag product, :image, :original, default: [100, 100], class: 'u-full-width'

@@ -1,4 +1,6 @@
 class Product < ActiveRecord::Base
+  retina!
+
   has_attached_file :image,
     styles: {
       original: "800"

@@ -1,5 +1,4 @@
 .container
-
   %nav
     = render 'shared/navigation'
 
@@ -13,3 +12,5 @@
         %h1 Templates Selecting
 
   -#PRODUCT SECTION
+  %section.products
+    = render 'products/product', products: @products
