@@ -14,12 +14,8 @@
 ActiveRecord::Schema.define(version: 20141227034342) do
 
   create_table "products", force: :cascade do |t|
-    t.string   "index"
-    t.string   "create"
-    t.string   "update"
-    t.string   "destroy"
-    t.string   "edit"
-    t.string   "show"
+    t.string   "name"
+    t.string   "description"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "image_file_name"

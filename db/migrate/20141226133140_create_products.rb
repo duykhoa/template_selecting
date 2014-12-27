@@ -1,12 +1,8 @@
 class CreateProducts < ActiveRecord::Migration
   def change
     create_table :products do |t|
-      t.string :index
-      t.string :create
-      t.string :update
-      t.string :destroy
-      t.string :edit
-      t.string :show
+      t.string :name
+      t.string :description
 
       t.timestamps null: false
     end
