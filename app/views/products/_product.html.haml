@@ -2,4 +2,11 @@
   .row
     - three_products.each do |product|
       .four.columns
-        = retina_image_tag product, :image, :original, default: [100, 100], class: 'u-full-width'
+        .product-wrapper
+          .product-header
+          .product-content
+            .product-image
+              = retina_image_tag product, :image, :original, default: [100, 100], class: 'u-full-width'
+            .product-viewer
+              .product-name= product.name
+              .product-view-button View Template
