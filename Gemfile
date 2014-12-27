@@ -19,6 +19,7 @@ gem 'simple_form'
 gem "lazyload-rails"
 gem "paperclip", "~> 4.2"
 gem "retina_rails", '~> 2.0.0'
+gem "font-awesome-rails"
 group :development do
   gem 'capistrano', '~> 3.0.1'
   gem 'capistrano-bundler'
