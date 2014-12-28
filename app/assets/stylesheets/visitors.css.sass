@@ -15,13 +15,14 @@ body
   &:hover
     .product-content .product-viewer
       opacity: 1
+      background: rgba(0, 0, 0, 0.5)
 
 .product-image
   width: 97%
   margin: 0 auto
 
 .product-header
-  height: 7px
+  height: 8px
   background-color: gray
   border-top-left-radius: 3px
   border-top-right-radius: 3px
@@ -31,9 +32,9 @@ body
   top: 0
   width: 100%
   height: 100%
-  background: white
   opacity: 0
-  transition: opacity 0.9s ease
+  background: transparent
+  transition: background 0.5s ease
 
 .product-info
   position: absolute
@@ -46,15 +47,34 @@ body
 .product-info
   text-align: center
 
+.product-info-name
+  color: white
+
 .product-info-view-button
+  border: 0
+  outline: none
   border-radius: 30px
-  border: 2px solid gray
   display: inline-block
   padding: 5px 15px
   margin-top: 15px
-  transition: all .3s ease-in-out
   cursor: pointer
+  background: white
 
-  &:hover
-    background: gray
-    color: white
+ul.pagination
+  text-align: center
+
+  li
+    display: inline-block
+
+    &.first, &.last, &.prev, &.last, &.next
+      display: none
+
+    a
+      text-decoration: none
+      color: black
+      padding: 10px 15px
+      border-radius: 3px
+
+    &.active
+      a
+        background: gray

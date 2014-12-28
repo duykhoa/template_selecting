@@ -6,8 +6,7 @@
           .product-header
           .product-content
             .product-image
-              = retina_image_tag product, :image, :original, default: [100, 100], class: 'u-full-width'
+              = retina_image_tag product, :image, :original, default: [100, 100], class: 'u-full-width', lazy: true
             .product-viewer
               .product-info
-                .product-info-name= product.name
                 .product-info-view-button View Template
