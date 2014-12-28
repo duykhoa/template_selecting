@@ -12,6 +12,10 @@ body
   height: 250px
   position: relative
 
+  &:hover
+    .product-content .product-viewer
+      opacity: 1
+
 .product-image
   width: 97%
   margin: 0 auto
@@ -28,6 +32,8 @@ body
   width: 100%
   height: 100%
   background: white
+  opacity: 0
+  transition: opacity 0.9s ease
 
 .product-info
   position: absolute
@@ -39,3 +45,16 @@ body
 
 .product-info
   text-align: center
+
+.product-info-view-button
+  border-radius: 30px
+  border: 2px solid gray
+  display: inline-block
+  padding: 5px 15px
+  margin-top: 15px
+  transition: all .3s ease-in-out
+  cursor: pointer
+
+  &:hover
+    background: gray
+    color: white
