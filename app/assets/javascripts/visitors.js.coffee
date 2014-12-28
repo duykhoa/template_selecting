@@ -1,8 +1,16 @@
 ready = ->
   $("img").lazyload()
 
-  $("section.products").twbsPagination(
-    visiblePages: 5
-    totalPages: 2
-  )
+  pagination = (container) ->
+    totalPages = parseInt $(container).data("total-pages")
+
+    $(container).twbsPagination(
+      visiblePages: 2
+      totalPages: totalPages
+      onPageClick: (event, page)->
+        console.log page
+    )
+
+  pagination(".products")
+
 $(document).ready(ready)
